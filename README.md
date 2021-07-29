@@ -3,14 +3,13 @@
 trigger: none
 
 parameters:
-# This is the path of your notebooks in Git.  Currently, this is not recursively deploying notebooks
+ This is the path of your notebooks in Git.  Currently, this is not recursively deploying notebooks
 - name: GIT_NOTEBOOK_PATH
   displayName: Notebooks Relative Path in Git
   type: string
   default: 'notebooks/MyProject'
-
-# This is where in your Databricks workspace your notebooks will be deployed
-# Typically this is under a Folder under the Workspace and not under a specific user's folder
+ This is where in your Databricks workspace your notebooks will be deployed
+Typically this is under a Folder under the Workspace and not under a specific user's folder
 - name: NOTEBOOK_DEPLOYMENT_PATH
   displayName: Notebooks Deployment Path to Databricks
   type: string
